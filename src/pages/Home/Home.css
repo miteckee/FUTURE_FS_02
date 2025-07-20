@@ -1,0 +1,22 @@
+.home {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.home-products {
+  margin-top: 40px;
+}
+
+.home-products h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
