@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Products.css";
-import ProductCard from "./ProductCard";
+import ProductCard from "../../components/ProductCard/ProductCard";
 
 const dummyProducts = [
   {

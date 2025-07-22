@@ -1,10 +1,11 @@
-import React from "react";
+import { useContext } from "react";
 import "./CartItem.css";
+import banner from "../../assets/banner.jpg";
 
 const CartItem = ({ item, onAdd, onRemove, onDelete }) => {
   return (
     <div className="cart-item">
-      <img src={item.image} alt={item.title} className="cart-item-img" />
+      <img src={banner} alt={item.title} className="cart-item-img" />
       <div className="cart-item-details">
         <h4>{item.title}</h4>
         <p>₹{item.price}</p>

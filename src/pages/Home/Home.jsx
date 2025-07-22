@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
-import Hero from "../components/Hero";
-import ProductCard from "../components/ProductCard";
+import Hero from "../../components/Hero/Hero";
+import ProductCard from "../../components/ProductCard/ProductCard";
 
 // Sample product data (replace with real data or props later)
 const sampleProducts = [
