@@ -1,0 +1,24 @@
+.contact-container {
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.contact-container p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-container a {
+  color: #0073b1;
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}

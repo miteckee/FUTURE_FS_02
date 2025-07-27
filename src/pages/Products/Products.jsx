@@ -1,41 +1,46 @@
 import React, { useState } from "react";
 import "./Products.css";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import Headphone from "../../assets/Headphone.jpg";
+import Shoe from "../../assets/running_shoe.jpg";
+import TShirt from "../../assets/T-shirt.jpg";
+import Watch from "../../assets/SmartWatch.jpg";
+import Sneaker from "../../assets/Sneakers.jpg";
 
 const dummyProducts = [
   {
     id: 1,
     title: "Cool Sneakers",
     price: 1299,
-    image: "/assets/product1.jpg",
+    image: Sneaker,
     category: "Footwear",
   },
   {
     id: 2,
     title: "Wireless Headphones",
     price: 2499,
-    image: "/assets/product2.jpg",
+    image: Headphone,
     category: "Electronics",
   },
   {
     id: 3,
     title: "Casual T-Shirt",
     price: 499,
-    image: "/assets/product3.jpg",
+    image: TShirt,
     category: "Clothing",
   },
   {
     id: 4,
     title: "Smart Watch",
     price: 1999,
-    image: "/assets/product4.jpg",
+    image: Watch,
     category: "Electronics",
   },
   {
     id: 5,
     title: "Running Shoes",
     price: 1599,
-    image: "/assets/product5.jpg",
+    image: Shoe,
     category: "Footwear",
   },
 ];
@@ -60,8 +65,15 @@ const Products = () => {
           placeholder="Search products..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          name="search"
+          id="search"
         />
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
+        <select
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+          name="category"
+          id="category"
+        >
           <option value="All">All Categories</option>
           <option value="Footwear">Footwear</option>
           <option value="Electronics">Electronics</option>
@@ -71,13 +83,7 @@ const Products = () => {
 
       <div className="products-grid">
         {filteredProducts.map((product) => (
-          <ProductCard
-            key={product.id}
-            image={product.image}
-            title={product.title}
-            price={product.price}
-            onAddToCart={() => console.log("Add to Cart", product)}
-          />
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </div>

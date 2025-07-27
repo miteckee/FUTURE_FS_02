@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #222;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   color: white;
 }
 
@@ -16,16 +16,45 @@
   list-style: none;
   display: flex;
   gap: 2rem;
+  align-items: center;
+}
+
+.navbar-links li {
+  position: relative;
 }
 
 .navbar-links li a {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-links li a:hover {
   color: #f0c040;
+}
+
+.navbar-links img {
+  width: 34px;
+  height: 34px;
+}
+.navbar-links img:hover {
+  transform: scale(1.1);
+}
+  
+/* Cart badge styling */
+.cart-count {
+  position: absolute;
+  top: -9px;
+  right: 4px;
+  background-color: #f0bc42;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  line-height: 1;
 }
 
 .navbar-toggle {

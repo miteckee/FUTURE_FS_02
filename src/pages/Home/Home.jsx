@@ -2,26 +2,29 @@ import React from "react";
 import "./Home.css";
 import Hero from "../../components/Hero/Hero";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import Headphone from "../../assets/Headphone.jpg";
+import Watch from "../../assets/SmartWatch.jpg";
+import Sneaker from "../../assets/Sneakers.jpg";
+import { useCart } from "../../context/CartContext";
 
-// Sample product data (replace with real data or props later)
 const sampleProducts = [
   {
     id: 1,
     title: "Wireless Headphones",
     price: 2999,
-    image: "/assets/headphones.jpg",
+    image: Headphone,
   },
   {
     id: 2,
     title: "Smart Watch",
     price: 1999,
-    image: "/assets/watch.jpg",
+    image: Watch,
   },
   {
     id: 3,
-    title: "Bluetooth Speaker",
+    title: "Cool Sneakers",
     price: 1499,
-    image: "/assets/speaker.jpg",
+    image: Sneaker,
   },
 ];
 
