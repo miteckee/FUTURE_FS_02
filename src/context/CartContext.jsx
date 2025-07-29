@@ -63,7 +63,7 @@ export const CartProvider = ({ children }) => {
         removeFromCart,
         deleteFromCart,
         totalPrice,
-        totalItems, // ✅ Needed for cart count badge
+        totalItems,
       }}
     >
       {children}

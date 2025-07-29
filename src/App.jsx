@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import "./App.css";
 
-// barrel imports
 import { Navbar } from "./components";
 
 // pages
